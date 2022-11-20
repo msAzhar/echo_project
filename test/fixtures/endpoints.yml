@@ -1,0 +1,76 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+--- 
+data: 
+  id: 10
+  path: /greeting
+  response: 
+    - 
+      body: "deneme" #"\"{ \"message\": \"Hello, world\" }\""
+    - 
+      code: 200
+    - 
+      headers: {}
+  verb: GET
+
+
+# one:
+#   data: >
+#     verb: 'GET',
+#     path: '/greeting',
+#     response: {
+#       code: 200,
+#       headers: {"ContentType": "applicaiton/json"},
+#       body: "\"{ \"message\": \"Hello, world\" }\""
+#     }
+
+# VALID YAML
+# --- 
+# one: 
+#   data: |
+#       verb: 'GET', path: '/greeting', response: {
+#         code: 200,
+#         headers: {"ContentType": "applicaiton/json"},
+#         body: "\"{ \"message\": \"Hello, world\" }\""
+#       }
+  
+
+  # response: '[code: 200, {headers: {"ContentType": "applicaiton/json"}}, body: "{ \"message\": \"Hello, world\" }"]'
+
+# one:
+#   verb: "GET"
+#   path: "/hello"
+#   # response['code']: 200
+#   # response['headers']: {}
+#   # response['body']: "\"{ \"message\": \"Hello, world\" }\""
+#   response: {code: 200, headers: {"ContentType": "applicaiton/json"}, body: "{ \"message\": \"Hello, world\" }"}
+  # {
+  #   "code":200, 
+  #   "headers":{}, 
+  #   "body":"\"{ \"message\": \"Hello, world\" }\""
+  # }
+  # response: 
+  #   - code: 200
+  #   - headers: {}
+  #   - body: "\"{ \"message\": \"Hello, world\" }\""]
+  # response: {
+  #   code: 200,
+  #   body: "hhh"
+  #   }
+    
+    
+    
+    
+  
+    
+
+# two:
+#   verb: "GET"
+#   path: "/greeting"
+  # response:
+  #   code: 200
+  
+  # response: 
+  #   code: 200
+  #   headers: {"ContentType": "applicaiton/json"}
+  #   body: "\"{ \"message\": \"Hello, world\" }\""
